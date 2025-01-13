@@ -39,7 +39,7 @@ def main():
             for s in shots:
                 if a.check_collision(s):
                     s.kill()
-                    a.kill()
+                    a.split()
         pygame.display.flip()
         dt_undevided = clock.tick(60)
         dt = dt_undevided / 1000
